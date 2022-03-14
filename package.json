@@ -1,0 +1,30 @@
+{
+  "name": "cdn",
+  "version": "0.1.3",
+  "description": "cdn资源",
+  "main": "index.js",
+  "scripts": {
+    "release": "standard-version",
+    "pre-release": "npm run release -- --prerelease alpha",
+    "tag": "node tag.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/specialCoder/cdn.git"
+  },
+  "author": "specialCoder",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/specialCoder/cdn/issues"
+  },
+  "homepage": "https://github.com/specialCoder/cdn#readme",
+  "husky": {
+    "hooks": {
+    }
+  },
+  "devDependencies": {
+    "husky": "^7.0.4",
+    "standard-version": "^9.3.2"
+  }
+}
