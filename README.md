@@ -16,6 +16,27 @@
 
 ## quick start
 
+```shell
+PS D:\mytest\cdn> tree /f seldom
+文件夹 PATH 列表
+卷序列号为 00000044 CF0D:74A5
+D:\MYTEST\CDN\SELDOM
+    seldom-main.css
+    seldom-utilities.css
+    XTestRunner_logo.jpg
+
+没有子文件夹
+```
+
+```shell
+https://cdn.jsdelivr.net/gh/qingdog/cdn/seldom/seldom-main.css
+https://cdn.jsdelivr.net/gh/qingdog/cdn/seldom/seldom-utilities.css
+https://cdn.jsdelivr.net/gh/qingdog/cdn@1.7.5/seldom/seldom-utilities.css
+# 图片将重定向到
+https://raw.githubusercontent.com/qingdog/cdn/v1.7.5/seldom/XTestRunner_logo.jpg
+https://cdn.jsdelivr.net/gh/qingdog/cdn/seldom/XTestRunner_logo.jpg
+```
+
 为什么要用CDN？
 ---------
 
@@ -141,7 +162,6 @@ tag 与 release 【待补充】
 `.github/workflow/publish.yml` 内容:
 
 ```
-
 name: release CI
 on:
   push:
