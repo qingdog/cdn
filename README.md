@@ -73,6 +73,18 @@ https://cdn.jsdelivr.net/gh/jquery/jquery@3.2.1/src/core.min.js
 https://cdn.jsdelivr.net/gh/jquery/jquery/
 ```
 
+---
+
+1. **使用 RawGit**： RawGit 是一个提供从 GitHub 仓库直接提供原始文件的服务。与 jsDelivr 类似，你可以通过 RawGit 的链接直接访问 GitHub 上的文件。不过，需要注意的是，从 2018 年起，RawGit 停止接受新文件，但仍然可以访问旧文件。
+2. **使用 GitHack**： GitHack 是另一个提供类似 RawGit 功能的服务，允许你通过 CDN 方式访问 GitHub 上的文件。
+3. **使用 Cloudflare Workers/Pages**： `Cloudflare Workers 允许你运行自定义的 JavaScript 代码来处理 HTTP 请求。你可以编写一个 Worker 来从 GitHub 仓库中获取文件并作为 CDN 提供服务。这个选项稍微复杂一些，但提供了更多的自定义能力。`
+4. **使用 Netlify**： `Netlify 是一个静态网站托管服务，它可以从 GitHub 仓库自动部署网站。你可以利用 Netlify 的 CDN 功能来托管静态资源。Netlify 提供了免费计划，并支持自定义域名和 SSL。`
+5. **使用 Vercel**： Vercel（之前称为 Zeit Now）也是一个静态网站和服务器less Functions 的托管平台，它可以从 GitHub 仓库自动部署项目，并提供全球 CDN 加速。
+6. **使用 Surge**： Surge 是一个命令行工具，可以快速部署静态网站和资源到全球 CDN。虽然它不如 Netlify 和 Vercel 那样功能丰富，但操作简单，适合快速部署。
+7. **使用 AWS CloudFront + S3**： 虽然这不是完全免费的服务，但亚马逊的 AWS 提供了免费层级的 S3 存储和一定量的 CloudFront CDN 数据传输。你可以将文件上传到 S3，然后通过 CloudFront 分发。
+8. **使用 Firebase Hosting**： Firebase Hosting 提供了一个免费的 CDN 服务，可以托管静态网站和资源。它也支持从 GitHub 仓库自动部署。
+9. jsdelivr：`jsDelivr 可以加载 github 仓库里 release 包里面的文件内容`
+
 为什么要用CDN？
 ---------
 
