@@ -37,6 +37,7 @@ https://cdn.jsdelivr.net/gh/qingdog/cdn@1.7.5/seldom/seldom-utilities.css
 
 https://qingdog.netlify.app/seldom/seldom-utilities.css
 https://seldom.pages.dev/seldom-utilities.css
+https://qingdog-cdn.pages.dev/seldom/seldom-utilities.css
 # 图片
 https://raw.githubusercontent.com/qingdog/cdn/v1.7.5/seldom/XTestRunner_logo.jpg
 https://cdn.jsdelivr.net/gh/qingdog/cdn/seldom/XTestRunner_logo.jpg
